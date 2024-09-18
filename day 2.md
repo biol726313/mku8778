@@ -1,2 +1,0 @@
-day 2
-Class lecture related to genome and sequencing basics was informative and recalling one. After all the software was fixed, a trial genomic adventure was started by creating. sbatch and .sh files. The genome of E. coli from the gene bank was downloaded and job was submitted to OSCER slurm and data was analyzed.
