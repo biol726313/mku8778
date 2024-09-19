@@ -7,4 +7,4 @@ Here are my notes from:
 * [Day 2](https://github.com/biol726313/mku8778/edit/main/day2.md)
 
 Class project: 
-* [Research proposal](https://github.com/biol726313/mku8778/edit/main/class_project/project_proposal.pdf)
+* [Research proposalhttps://github.com/biol726313/mku8778/blob/main/class%20project.pdf
