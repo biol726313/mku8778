@@ -1,0 +1,18 @@
+---
+
+output: word_document
+
+---
+
+## To assemble the genome:
+
+```bach
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR857/SRR857279/SRR857279_1.fastq.gz
+```
+
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
