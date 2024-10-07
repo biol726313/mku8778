@@ -11,5 +11,5 @@ Class project:
 
 ## fastQc files:
 
-*[ecoli_fastqc.sh] (https://github.com/biol726313/mku8778/blob/main/ecoli_fastqc.sh)
-*[ecoli_fastqc.sbatch] (https://github.com/biol726313/mku8778/blob/main/ecoli_fastqc.sbatch)
+#[ecoli_fastqc.sh] (https://github.com/biol726313/mku8778/blob/main/ecoli_fastqc.sh)
+#[ecoli_fastqc.sbatch] (https://github.com/biol726313/mku8778/blob/main/ecoli_fastqc.sbatch)
