@@ -47,6 +47,7 @@ Class project:
 ## Removing suspected duplicates
 
 [ecoli_markdup.sh](https://github.com/biol726313/mku8778/blob/main/ecoli_markdup.sh)
+
 [ecoli_markdup.sbatch](https://github.com/biol726313/mku8778/blob/main/ecoli_markdup.sbatch)
 
 
