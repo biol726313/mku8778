@@ -20,3 +20,9 @@ Class project:
 [ecoli_trim.sh](https://github.com/biol726313/mku8778/blob/main/ecoli_trim.sh)
 
 [ecoli_trim.sbatch](https://github.com/biol726313/mku8778/blob/main/ecoli_fastqc.sbatch)
+
+## Generating index:
+
+[ecoli_index.sh](https://github.com/biol726313/mku8778/blob/main/ecoli_index.sh)
+
+[ecoli_index.sbatch](https://github.com/biol726313/mku8778/blob/main/ecoli_index.sbatch)
