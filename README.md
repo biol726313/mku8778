@@ -27,6 +27,7 @@ Class project:
 
 [ecoli_index.sbatch](https://github.com/biol726313/mku8778/blob/main/ecoli_index.sbatch)
 
+
 ## Maping
 [ecoli_bwa_mem.sh](https://github.com/biol726313/mku8778/blob/main/ecoli_bwa_mem.sh)
 
@@ -42,6 +43,11 @@ Class project:
 [ecoli_map_sort.sh](https://github.com/biol726313/mku8778/blob/main/ecoli_map_sort.sh)
 
 [ecoli_map_sort.sbatch](https://github.com/biol726313/mku8778/blob/main/ecoli_map_sort.sbatch)
+
+## Removing suspected duplicates
+
+[ecoli_markdup.sh](https://github.com/biol726313/mku8778/blob/main/ecoli_markdup.sh)
+[ecoli_markdup.sbatch](https://github.com/biol726313/mku8778/blob/main/ecoli_markdup.sbatch)
 
 
 
