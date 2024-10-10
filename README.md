@@ -32,6 +32,17 @@ Class project:
 
 [ecoli_bwa_mem.sbatch](https://github.com/biol726313/mku8778/blob/main/ecoli_bwa_mem.sbatch)
 
+## Converting SAM to BAM
+
+[ecoli_samtools_view.sh](https://github.com/biol726313/mku8778/blob/main/ecoli_samtools_view.sh)
+
+[ecoli_samtools_view.sbatch](https://github.com/biol726313/mku8778/blob/main/ecoli_samtools_view.sbatch)
+
+## Sorting a BAM File
+[ecoli_map_sort.sh](https://github.com/biol726313/mku8778/blob/main/ecoli_map_sort.sh)
+
+[ecoli_map_sort.sbatch](https://github.com/biol726313/mku8778/blob/main/ecoli_map_sort.sbatch)
+
 
 
 
