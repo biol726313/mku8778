@@ -26,3 +26,13 @@ Class project:
 [ecoli_index.sh](https://github.com/biol726313/mku8778/blob/main/ecoli_index.sh)
 
 [ecoli_index.sbatch](https://github.com/biol726313/mku8778/blob/main/ecoli_index.sbatch)
+
+## Maping
+[ecoli_bwa_mem.sh](https://github.com/biol726313/mku8778/blob/main/ecoli_bwa_mem.sh)
+
+[ecoli_bwa_mem.sbatch](https://github.com/biol726313/mku8778/blob/main/ecoli_bwa_mem.sbatch)
+
+
+
+
+
