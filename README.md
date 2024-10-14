@@ -57,6 +57,20 @@ Class project:
 [ecoli_vcf.sbatch](https://github.com/biol726313/mku8778/blob/main/ecoli_vcf.sbatch)
 
 
+[ecoli_call.sh](https://github.com/biol726313/mku8778/blob/main/ecoli_call.sh)
+
+[ecoli_call.sbatch](https://github.com/biol726313/mku8778/blob/main/ecoli_call.sbatch)
+
+[ecoli_filt.sh](https://github.com/biol726313/mku8778/blob/main/ecoli_filt.sh)
+
+[ecoli_filt.sbatch](https://github.com/biol726313/mku8778/blob/main/ecoli_filt.sbatch)
+
+##Locating Genes that are Missing Compared to the Reference
+
+[ecoli_cover.sh](https://github.com/biol726313/mku8778/blob/main/ecoli_cover.sh)
+
+[ecoli_cover.sbatch](https://github.com/biol726313/mku8778/blob/main/ecoli_cover.sbatch)
+
 
 
 
