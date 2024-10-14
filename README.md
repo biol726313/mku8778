@@ -71,6 +71,39 @@ Class project:
 
 [ecoli_cover.sbatch](https://github.com/biol726313/mku8778/blob/main/ecoli_cover.sbatch)
 
+## Assembly of Unmapped Reads
 
+[bam_to_fasta.sh](https://github.com/biol726313/mku8778/blob/main/bam_to_fasta.sh)
 
+[bam_to_fasta.sbatch](https://github.com/biol726313/mku8778/blob/main/bam_to_fasta.sbatch)
+
+## De-novo Assembly
+
+[unmapped_spades.sh](https://github.com/biol726313/mku8778/blob/main/unmapped_spades.sh)
+
+[unmapped_spades.sbatch](https://github.com/biol726313/mku8778/blob/main/unmapped_spades.sbatch)
+
+## Assesment of Assemblies
+
+[unmapped_quast.sh](https://github.com/biol726313/mku8778/blob/main/unmapped_quast.sh)
+
+[unmapped_quast.sbatch](https://github.com/biol726313/mku8778/blob/main/unmapped_quast.sbatch)
+
+## Obtain Open Reading Frames
+
+[unmapped_orf.sh](https://github.com/biol726313/mku8778/blob/main/unmapped_orf.sh)
+
+[unmapped_orf.sbatch](https://github.com/biol726313/mku8778/blob/main/unmapped_orf.sbatch)
+
+## Additional Checks
+
+[unmapped_blastn.sh](https://github.com/biol726313/mku8778/blob/main/unmapped_blastn.sh)
+
+[unmapped_blastn.sbatch](https://github.com/biol726313/mku8778/blob/main/unmapped_blastn.sbatch)
+
+## Run Open Reading Frames Through pfam_scan
+
+[unmapped_pfam.sh](https://github.com/biol726313/mku8778/blob/main/unmapped_pfam.sh)
+
+[unmapped_pfam.sbatch](https://github.com/biol726313/mku8778/blob/main/unmapped_pfam.sbatch)
 
