@@ -65,7 +65,7 @@ Class project:
 
 [ecoli_filt.sbatch](https://github.com/biol726313/mku8778/blob/main/ecoli_filt.sbatch)
 
-##Locating Genes that are Missing Compared to the Reference
+## Locating Genes that are Missing Compared to the Reference
 
 [ecoli_cover.sh](https://github.com/biol726313/mku8778/blob/main/ecoli_cover.sh)
 
