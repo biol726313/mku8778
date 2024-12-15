@@ -107,3 +107,24 @@ Class project:
 
 [unmapped_pfam.sbatch](https://github.com/biol726313/mku8778/blob/main/unmapped_pfam.sbatch)
 
+## De novo Assembly Using Short Reads
+
+[full_spades.sh](https://github.com/biol726313/mku8778/blob/main/full_spades.sh)
+
+[full_spades.sbatch](https://github.com/biol726313/mku8778/blob/main/full_spades.bash)
+
+## checking assembly
+
+[quast.sh](https://github.com/biol726313/mku8778/blob/main/quast.sh)
+
+[quast.sbatch](https://github.com/biol726313/mku8778/blob/main/quast.sbatch)
+
+## Index the contigs
+
+[reads_index.sh](https://github.com/biol726313/mku8778/blob/main/reads_index.sh)
+
+[reads_index.sbatch](https://github.com/biol726313/mku8778/blob/main/reads_index.sbatch)
+
+
+
+
