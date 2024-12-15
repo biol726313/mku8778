@@ -132,4 +132,3 @@ Class project:
 [mapping.sbatch](https://github.com/biol726313/mku8778/blob/main/mapping.sbatch)
 
 
-
