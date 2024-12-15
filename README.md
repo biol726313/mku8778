@@ -125,6 +125,11 @@ Class project:
 
 [reads_index.sbatch](https://github.com/biol726313/mku8778/blob/main/reads_index.sbatch)
 
+## align QC reads to contigs and output SAM file
+
+[mapping.sh](https://github.com/biol726313/mku8778/blob/main/mapping.sh)
+
+[mapping.sbatch](https://github.com/biol726313/mku8778/blob/main/mapping.sbatch)
 
 
 
