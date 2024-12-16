@@ -1,2 +1,1 @@
-bwa index -p /scratch/biol726313/BIOL7263_Genomics/pseudomonas_gm41/mapping_to_assembly/hybrid_assembly \
-/scratch/biol726313/BIOL7263_Genomics/pseudomonas_gm41/assembly/hybrid/contigs.fasta
+samtools index /scratch/biol726313/BIOL7263_Genomics/sequencing_data/ecoli/assembly/mapping_to_assembly/contigs_mapped_sorted.bam
