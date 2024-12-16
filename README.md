@@ -131,4 +131,95 @@ Class project:
 
 [mapping.sbatch](https://github.com/biol726313/mku8778/blob/main/mapping.sbatch)
 
+## convert the SAM file to a BAM file
+
+[sam_tobam.sh](https://github.com/biol726313/mku8778/blob/main/sam_tobam.sh)
+
+[sam_tobam.sbatch](https://github.com/biol726313/mku8778/blob/main/sam_tobam.sbatch)
+
+## sort the BAM file
+
+[bam_sort.sh](https://github.com/biol726313/mku8778/blob/main/bam_sort.sh)
+
+[bam_sort.sbatch](https://github.com/biol726313/mku8778/blob/main/bam_sort.sbatch)
+
+## Index BAM
+
+[index_bam.sh](https://github.com/biol726313/mku8778/blob/main/index_bam.sh)
+
+[index_bam.sbatch](https://github.com/biol726313/mku8778/blob/main/index_bam.sbatch)
+
+## Mapping statstistics
+
+[qualimap.sh](https://github.com/biol726313/mku8778/blob/main/qualimap.sh)
+
+[qualimap.sbatch](https://github.com/biol726313/mku8778/blob/main/qualimap.sbatch)
+
+## BLAST search
+
+[blast.sh](https://github.com/biol726313/mku8778/blob/main/blast.sh)
+
+[blast.sbatch](https://github.com/biol726313/mku8778/blob/main/blast.sbatch)
+
+## Annotation of de novo Assembled Contigs
+
+[orfipy.sh](https://github.com/biol726313/mku8778/blob/main/orfipy.sh)
+
+[orfipy.sbatch](https://github.com/biol726313/mku8778/blob/main/orfipy.sbatch)
+
+[pfam.sh](https://github.com/biol726313/mku8778/blob/main/pfam.sh)
+
+[pfam.sbatch](https://github.com/biol726313/mku8778/blob/main/pfam.sbatch)
+
+[blast_p.sh](https://github.com/biol726313/mku8778/blob/main/blast_p.sh)
+
+[blast_p.sbatch](https://github.com/biol726313/mku8778/blob/main/blast_p.sbatch)
+
+## Hybrid de novo Assembly
+
+## QC the data
+
+[pseudo_fastqc.sh](https://github.com/biol726313/mku8778/blob/main/pseudo_fastqc.sh)
+
+[pseudo_fastqc.sbatch](https://github.com/biol726313/mku8778/blob/main/pseudo_fastqc.sbatch)
+
+## Trim the Reads
+
+[pseudo_trim.sh](https://github.com/biol726313/mku8778/blob/main/pseudo_trim.sh)
+
+[pseudo_trim.sbatch](https://github.com/biol726313/mku8778/blob/main/pseudo_trim.sbatch)
+
+## Assembly
+
+[pseudo_short_assembly.sh](https://github.com/biol726313/mku8778/blob/main/pseud_short_assembly.sh)
+
+[pseudo_short_assembly.sbatch](https://github.com/biol726313/mku8778/blob/main/pseud_short_assembly.sbatch)
+
+## Hybrid Assembly
+
+[pseudo_long_assembly.sh](https://github.com/biol726313/mku8778/blob/main/pseudo_long_assembly.sh)
+
+[pseudo_long_assembly.sbatch](https://github.com/biol726313/mku8778/blob/main/pseudo_long_assembly.sbatch)
+
+## Align Reads Back to Reference
+
+## Index the BAM file
+
+[index_bam.sh](https://github.com/biol726313/mku8778/blob/main/index_bam.sh)
+
+[index_bam.sbatch](https://github.com/biol726313/mku8778/blob/main/index_bam.sbatch)
+
+## Mapping the Illumina reads
+
+[illumina_map.sh](https://github.com/biol726313/mku8778/blob/main/illumina_map.sh)
+
+[illumina_map.sbatch](https://github.com/biol726313/mku8778/blob/main/illumina_map.sbatch)
+
+## Mapping the PacBio data to the assembly
+
+[pacbio_map.sh](https://github.com/biol726313/mku8778/blob/main/pacbio_map.sh)
+
+[pacbio_map.sbatch](https://github.com/biol726313/mku8778/blob/main/pacbio_map.sbatch)
+
+
 
