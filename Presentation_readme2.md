@@ -183,4 +183,26 @@ bash spades_hybrid_assembly.sh
 spades.py --phred-offset 33 --threads 24 --careful -1 /scratch/biol726313/BIOL7263_Genomics/camphylobacter/trimmed_reads_val_1.fq.gz -2 /scratch/biol726313/BIOL7263_Genomics/camphylobacter/trimmed_reads_val_2.fq.gz --nanopore /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/SRR26353490_1.trim.fastq.gz -o /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/spades_hybrid_assembly/spades_hybrid_output
 
 ```
+11. The hybrid assembly quality was checked by hybrid quast with following .sbatch and .sh script
+
+```bach
+#!/bin/bash
+#
+#SBATCH --partition=debug
+#SBATCH --ntasks=1
+#SBATCH --mem 20G
+#SBATCH --output=quast_hybrid_%J_stdout.txt
+#SBATCH --error=quast_hybrid_%J_stderr.txt
+#SBATCH --job-name=quast_hybrid
+# 
+
+bash quast_hybrid.sh
+
+```
+
+```bach
+quast.py --output-dir /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/spades_hybrid_assembly/quast /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/spades_hybrid_assembly/spades_hybrid_output/contigs.fasta
+
+```
+
 
