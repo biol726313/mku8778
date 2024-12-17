@@ -463,6 +463,25 @@ to run the tool are below:</li>
 
 bash porechop.sh</code></pre>
 <pre class="bach"><code>porechop -i /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/SRR26353490_1.fastq.gz -o /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/SRR26353490_1.trim.fastq.gz</code></pre>
+<ol start="8" style="list-style-type: decimal">
+<li>For the illumina trimmed sequence, spades was run separately for de
+novo assembly. The script for .sbatch and .sh are given below:</li>
+</ol>
+<pre class="bach"><code>#!/bin/bash
+#
+#SBATCH --partition=normal
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=24
+#SBATCH --mem 100G
+#SBATCH --output=full_spades_%J_stdout.txt
+#SBATCH --error=full_spades_%J_stderr.txt
+#SBATCH --job-name=full_sapdes
+# 
+
+bash short_reads_assembly.sh</code></pre>
+<pre class="bach"><code>spades.py --phred-offset 33 --threads 24 --careful -o /scratch/biol726313/BIOL7263_Genomics/camphylobacter/assembly \
+-1 /scratch/biol726313/BIOL7263_Genomics/camphylobacter/trimmed_reads_val_1.fq.gz \
+-2 /scratch/biol726313/BIOL7263_Genomics/camphylobacter/trimmed_reads_val_2.fq.gz</code></pre>
 
 
 

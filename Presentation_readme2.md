@@ -123,4 +123,25 @@ bash porechop.sh
 ```bach
 porechop -i /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/SRR26353490_1.fastq.gz -o /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/SRR26353490_1.trim.fastq.gz
 ```
+8. For the illumina trimmed sequence, spades was run separately for de novo assembly. The script for .sbatch and .sh are given below:
+
+```bach
+#!/bin/bash
+#
+#SBATCH --partition=normal
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=24
+#SBATCH --mem 100G
+#SBATCH --output=full_spades_%J_stdout.txt
+#SBATCH --error=full_spades_%J_stderr.txt
+#SBATCH --job-name=full_sapdes
+# 
+
+bash short_reads_assembly.sh
+```
+```bach
+spades.py --phred-offset 33 --threads 24 --careful -o /scratch/biol726313/BIOL7263_Genomics/camphylobacter/assembly \
+-1 /scratch/biol726313/BIOL7263_Genomics/camphylobacter/trimmed_reads_val_1.fq.gz \
+-2 /scratch/biol726313/BIOL7263_Genomics/camphylobacter/trimmed_reads_val_2.fq.gz
+```
 
