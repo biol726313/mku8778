@@ -428,18 +428,22 @@ bash trim_galore.sh
 Below are the .sbatch and .sh batch file. For using this tool a seperate
 environment was created and run on seperate environment.</li>
 </ol>
-<p>```bach #!/bin/bash # #SBATCH –partition=normal #SBATCH –ntasks=1
-#SBATCH –cpus-per-task=8 #SBATCH –mem 80G #SBATCH
-–output=nanoplot_%J_stdout.txt #SBATCH –error=nanoplot__%J_stderr.txt
-#SBATCH –job-name=nanoplot #</p>
-<p>bash nanoplot.sh</p>
-<p>```bach</p>
-<p>-and .sh: ```bach</p>
-<p>NanoPlot –fastq
-/scratch/biol726313/BIOL7263_Genomics/ONT_longreads/SRR26353490_1.fastq.gz
-–outdir
-/scratch/biol726313/BIOL7263_Genomics/ONT_longreads/nanoplot_output
-–title “SRR26353490_1 Quality” ```bach</p>
+<pre class="bach"><code>#!/bin/bash
+#
+#SBATCH --partition=normal
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem 80G
+#SBATCH --output=nanoplot_%J_stdout.txt
+#SBATCH --error=nanoplot__%J_stderr.txt
+#SBATCH --job-name=nanoplot
+# 
+
+bash nanoplot.sh
+</code></pre>
+<p>-and .sh:</p>
+<pre class="bach"><code>
+NanoPlot --fastq /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/SRR26353490_1.fastq.gz --outdir /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/nanoplot_output --title &quot;SRR26353490_1 Quality&quot;</code></pre>
 
 
 

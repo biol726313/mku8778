@@ -96,11 +96,11 @@ trim_galore --paired --fastqc --gzip --cores 4 --length 100 /scratch/biol726313/
 
 bash nanoplot.sh
 
-```bach
+```
 
 -and .sh:
 ```bach
 
 NanoPlot --fastq /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/SRR26353490_1.fastq.gz --outdir /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/nanoplot_output --title "SRR26353490_1 Quality"
-```bach
+```
 
