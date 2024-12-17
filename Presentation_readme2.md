@@ -144,4 +144,23 @@ spades.py --phred-offset 33 --threads 24 --careful -o /scratch/biol726313/BIOL72
 -1 /scratch/biol726313/BIOL7263_Genomics/camphylobacter/trimmed_reads_val_1.fq.gz \
 -2 /scratch/biol726313/BIOL7263_Genomics/camphylobacter/trimmed_reads_val_2.fq.gz
 ```
+9. QC assembly is done for illumina sequence using quast with .sbatch and .sh batch script below:
+
+```bach
+#!/bin/bash
+#
+#SBATCH --partition=debug
+#SBATCH --ntasks=1
+#SBATCH --mem 20G
+#SBATCH --output=quast_%J_stdout.txt
+#SBATCH --error=quast_%J_stderr.txt
+#SBATCH --job-name=quast
+# 
+
+bash quast.sh
+
+```
+```bach
+quast.py --output-dir /scratch/biol726313/BIOL7263_Genomics/camphylobacter/assembly/quast /scratch/biol726313/BIOL7263_Genomics/camphylobacter/assembly/contigs.fasta
+```
 
