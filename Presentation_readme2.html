@@ -384,8 +384,8 @@ link:</li>
 <pre class="bach"><code>
 wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR263/090/SRR26353490/SRR26353490_1.fastq.gz</code></pre>
 <ol start="4" style="list-style-type: decimal">
-<li>Analysis: Fast Qc of the short raeds from illumina was done with
-following fastqc command:</li>
+<li>Analysis: Quality of short reads from illumina was done using Fastqc
+tool with following fastqc .sbatch and .sh command:</li>
 </ol>
 <p>-sbatch file:</p>
 <pre class="bach"><code>
@@ -424,8 +424,22 @@ bash trim_galore.sh
 <p>-and sh:</p>
 <pre class="bach"><code>trim_galore --paired --fastqc --gzip --cores 4 --length 100 /scratch/biol726313/BIOL7263_Genomics/camphylobacter/SRR26353491_1.fastq.gz /scratch/biol726313/BIOL7263_Genomics/camphylobacter/SRR26353491_2.fastq.gz --basename trimmed_reads -o /scratch/biol726313/BIOL7263_Genomics/camphylobacter/</code></pre>
 <ol start="6" style="list-style-type: decimal">
-<li>for trimming the nanopore reads porechop</li>
+<li>Quality of oxford nanopore reads was done by using tool nanoplot.
+Below are the .sbatch and .sh batch file. For using this tool a seperate
+environment was created and run on seperate environment.</li>
 </ol>
+<p>```bach #!/bin/bash # #SBATCH –partition=normal #SBATCH –ntasks=1
+#SBATCH –cpus-per-task=8 #SBATCH –mem 80G #SBATCH
+–output=nanoplot_%J_stdout.txt #SBATCH –error=nanoplot__%J_stderr.txt
+#SBATCH –job-name=nanoplot #</p>
+<p>bash nanoplot.sh</p>
+<p>```bach</p>
+<p>-and .sh: ```bach</p>
+<p>NanoPlot –fastq
+/scratch/biol726313/BIOL7263_Genomics/ONT_longreads/SRR26353490_1.fastq.gz
+–outdir
+/scratch/biol726313/BIOL7263_Genomics/ONT_longreads/nanoplot_output
+–title “SRR26353490_1 Quality” ```bach</p>
 
 
 

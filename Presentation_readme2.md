@@ -29,7 +29,7 @@ wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR263/090/SRR26353490/SRR26353490_1.fas
 
 
 
-4. Analysis: Fast Qc of the short raeds from illumina was done with following fastqc command:
+4. Analysis: Quality of short reads from illumina was done using Fastqc tool with following fastqc .sbatch and .sh command:
 
 -sbatch file:
 
@@ -80,4 +80,27 @@ bash trim_galore.sh
 trim_galore --paired --fastqc --gzip --cores 4 --length 100 /scratch/biol726313/BIOL7263_Genomics/camphylobacter/SRR26353491_1.fastq.gz /scratch/biol726313/BIOL7263_Genomics/camphylobacter/SRR26353491_2.fastq.gz --basename trimmed_reads -o /scratch/biol726313/BIOL7263_Genomics/camphylobacter/
 ```
 
-6. for trimming the nanopore reads porechop 
+6. Quality of oxford nanopore reads was done by using tool nanoplot. Below are the .sbatch and .sh batch file. For using this tool a seperate environment was created and run on seperate environment.
+
+```bach
+#!/bin/bash
+#
+#SBATCH --partition=normal
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem 80G
+#SBATCH --output=nanoplot_%J_stdout.txt
+#SBATCH --error=nanoplot__%J_stderr.txt
+#SBATCH --job-name=nanoplot
+# 
+
+bash nanoplot.sh
+
+```bach
+
+-and .sh:
+```bach
+
+NanoPlot --fastq /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/SRR26353490_1.fastq.gz --outdir /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/nanoplot_output --title "SRR26353490_1 Quality"
+```bach
+
