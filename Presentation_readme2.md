@@ -163,4 +163,24 @@ bash quast.sh
 ```bach
 quast.py --output-dir /scratch/biol726313/BIOL7263_Genomics/camphylobacter/assembly/quast /scratch/biol726313/BIOL7263_Genomics/camphylobacter/assembly/contigs.fasta
 ```
+10. Trim sequenced from illumina and nanopore is de novo assembled by using spades hybrid. Below is the script for sbatch and .sh files.
+
+```bach
+#!/bin/bash
+#
+#SBATCH --partition=normal
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=24
+#SBATCH --mem 100G
+#SBATCH --output=spades_hybrid_%J_stdout.txt
+#SBATCH --error=spades_hybrid_%J_stderr.txt
+#SBATCH --job-name=spades_hybrid
+# 
+
+bash spades_hybrid_assembly.sh
+```
+```bach
+spades.py --phred-offset 33 --threads 24 --careful -1 /scratch/biol726313/BIOL7263_Genomics/camphylobacter/trimmed_reads_val_1.fq.gz -2 /scratch/biol726313/BIOL7263_Genomics/camphylobacter/trimmed_reads_val_2.fq.gz --nanopore /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/SRR26353490_1.trim.fastq.gz -o /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/spades_hybrid_assembly/spades_hybrid_output
+
+```
 
