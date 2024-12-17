@@ -204,5 +204,6 @@ bash quast_hybrid.sh
 quast.py --output-dir /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/spades_hybrid_assembly/quast /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/spades_hybrid_assembly/spades_hybrid_output/contigs.fasta
 
 ```
+My next step would be to analyze the high accuracy base calling sequence data from oxford nanopore using Dorado and compare the quality of assembled sequence with illumina alone and hybrid from oxford nanopore sequence. If the quality of sequence data obtained from oxford nanopore would be identical, then process of sequencing genome using nanopore would be less time consuming and economical.
 
 
