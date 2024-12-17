@@ -80,7 +80,7 @@ bash trim_galore.sh
 trim_galore --paired --fastqc --gzip --cores 4 --length 100 /scratch/biol726313/BIOL7263_Genomics/camphylobacter/SRR26353491_1.fastq.gz /scratch/biol726313/BIOL7263_Genomics/camphylobacter/SRR26353491_2.fastq.gz --basename trimmed_reads -o /scratch/biol726313/BIOL7263_Genomics/camphylobacter/
 ```
 
-6. Quality of oxford nanopore reads was done by using tool nanoplot. Below are the .sbatch and .sh batch file. For using this tool a seperate environment was created and run on seperate environment.
+6. Quality check of oxford nanopore reads was done by using tool nanoplot. Below are the .sbatch and .sh file. For using this tool a separate environment was created and run on separate environment.
 
 ```bach
 #!/bin/bash
@@ -102,5 +102,25 @@ bash nanoplot.sh
 ```bach
 
 NanoPlot --fastq /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/SRR26353490_1.fastq.gz --outdir /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/nanoplot_output --title "SRR26353490_1 Quality"
+```
+7. In the next step sequence obtained from nanopore were trimmed to remove adapter sequences using tool porechop. The sbatch and .sh script to run the tool are below:
+```bach
+
+#!/bin/bash
+#
+#SBATCH --partition=normal
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem 120G
+#SBATCH --output=porechop_%J_stdout.txt
+#SBATCH --error=porechop_%J_stderr.txt
+#SBATCH --job-name=porechop
+# 
+
+bash porechop.sh
+```
+
+```bach
+porechop -i /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/SRR26353490_1.fastq.gz -o /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/SRR26353490_1.trim.fastq.gz
 ```
 
