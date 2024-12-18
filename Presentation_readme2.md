@@ -206,7 +206,11 @@ quast.py --output-dir /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/spades
 ```
 
 12. RESULT:
-Per base sequence quality from illumina was 30, which was much higher than from the oxford nanopore (per base sequence quality was 14.2).However, there were much larger contigs from oxford nanopore, if combine hybrid analysis was done, the result obtained was great. The result obtained from hybrid spades was much better (10X) in terms of N50 than the sequence from ilumina used alone. So, combined sequence analysis from illumina and oxford nanopore is much better and no nucleotide mismatches per 100 Kbp. 
+Per base sequence quality from illumina was 30, which was much higher than from the oxford nanopore (per base sequence quality was 14.2).However, there were much larger contigs from oxford nanopore, if combine hybrid analysis was done, the result obtained was great. The result obtained from hybrid spades was much better (10X) in terms of N50 than the sequence from ilumina used alone. So, combined sequence analysis from illumina and oxford nanopore is much better and no nucleotide mismatches per 100 Kbp.
+Below is the final report after quast analysis from illumina and hybrid.
+# [pdf from illumina](https://github.com/biol726313/mku8778/blob/main/report.pdf)
+# [pdf from hybrid](https://github.com/biol726313/mku8778/blob/main/report%20hybrid.pdf)
+
 My next step would be to analyze the high accuracy base calling sequence data from oxford nanopore using Dorado and compare the quality of assembled sequence with illumina alone and hybrid from oxford nanopore sequence. If the quality of sequence data obtained from oxford nanopore would be identical, then process of sequencing genome using nanopore would be less time consuming and economical.
 
 13. The experience i got in this seminar was great. I appreciate Dr. Toomey for his hard work, pushing me all the time when i need help. This seminar will be a key part in my PhD journey. 
