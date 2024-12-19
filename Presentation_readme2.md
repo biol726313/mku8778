@@ -209,13 +209,27 @@ quast.py --output-dir /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/spades
 Per base sequence quality from illumina was 30, which was much higher than from the oxford nanopore (per base sequence quality was 14.2).However, there were much larger contigs from oxford nanopore, if combine hybrid analysis was done, the result obtained was great. The result obtained from hybrid spades was much better (10X) in terms of N50 than the sequence from ilumina used alone. So, combined sequence analysis from illumina and oxford nanopore is much better and no nucleotide mismatches per 100 Kbp.
 
 # Fast QC report from illumina sequencing
+
 ![FastQC report from illumina](https://github.com/biol726313/mku8778/blob/main/SRR26353491_1.FASTQ.GZ.jpeg)
 
 ![FastQC report from illumina read2](https://github.com/biol726313/mku8778/blob/main/SRR26353491_2.fastq.gz.jpeg)
 
-Below is the final report after quast analysis from illumina and hybrid.
-# [pdf from illumina](https://github.com/biol726313/mku8778/blob/main/report.pdf)
-# [pdf from hybrid](https://github.com/biol726313/mku8778/blob/main/report%20hybrid.pdf)
+# trimmed report from illumina
+
+![trimmed reads 1](https://github.com/biol726313/mku8778/blob/main/trimmed_reads_reads_val_1.fq.gz.jpeg)
+
+![trimmed reads 2](https://github.com/biol726313/mku8778/blob/main/trimmed_read_val_2.fq.gz.jpeg)
+
+# Nanoplot report from oxford nanopore
+
+![nanoplot report](https://github.com/biol726313/mku8778/blob/main/NANOPLOT%20REPORT.jpeg)
+
+
+# Below is the final report after quast analysis from illumina and hybrid
+
+![quast from illumina](https://github.com/biol726313/mku8778/blob/main/QUAST%20ILLUMINA.jpeg)
+
+![quast from hybrid from hybrid](https://github.com/biol726313/mku8778/blob/main/QUAST%20HYBRID.jpeg)
 
 My next step would be to analyze the high accuracy base calling sequence data from oxford nanopore using Dorado and compare the quality of assembled sequence with illumina alone and hybrid from oxford nanopore sequence. If the quality of sequence data obtained from oxford nanopore would be identical, then process of sequencing genome using nanopore would be less time consuming and economical.
 
