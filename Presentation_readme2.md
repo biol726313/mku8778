@@ -207,6 +207,12 @@ quast.py --output-dir /scratch/biol726313/BIOL7263_Genomics/ONT_longreads/spades
 
 12. RESULT:
 Per base sequence quality from illumina was 30, which was much higher than from the oxford nanopore (per base sequence quality was 14.2).However, there were much larger contigs from oxford nanopore, if combine hybrid analysis was done, the result obtained was great. The result obtained from hybrid spades was much better (10X) in terms of N50 than the sequence from ilumina used alone. So, combined sequence analysis from illumina and oxford nanopore is much better and no nucleotide mismatches per 100 Kbp.
+
+# Fast QC report from illumina sequencing
+![FastQC report from illumina](https://github.com/biol726313/mku8778/blob/main/SRR26353491_1.FASTQ.GZ.jpeg)
+
+![FastQC report from illumina read2](https://github.com/biol726313/mku8778/blob/main/SRR26353491_2.fastq.gz.jpeg)
+
 Below is the final report after quast analysis from illumina and hybrid.
 # [pdf from illumina](https://github.com/biol726313/mku8778/blob/main/report.pdf)
 # [pdf from hybrid](https://github.com/biol726313/mku8778/blob/main/report%20hybrid.pdf)
